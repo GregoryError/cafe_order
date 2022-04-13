@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateOrderActivity">
+
+    <TextView
+        android:id="@+id/textViewHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="что будете заказывать?"
+        android:layout_margin="8dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/radioButtonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/textViewHello"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Чай"
+            android:layout_margin="8dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Кофе"
+                android:layout_margin="8dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewAdditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/radioButtonGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="что добавить в ваш чай?"
+        android:layout_margin="8dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxMilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Молоко"
+        app:layout_constraintTop_toBottomOf="@id/textViewAdditions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/checkBoxSugar"
+        android:layout_margin="8dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBoxSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сахар"
+        app:layout_constraintTop_toBottomOf="@id/textViewAdditions"
+        app:layout_constraintStart_toEndOf="@id/checkBoxMilk"
+        app:layout_constraintEnd_toStartOf="@id/checkBoxLemon"
+        android:layout_margin="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxLemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Лемон"
+        app:layout_constraintTop_toBottomOf="@id/textViewAdditions"
+        app:layout_constraintStart_toEndOf="@id/checkBoxSugar"
+        app:layout_constraintEnd_toEndOf="parent
+        android:layout_margin="8dp"
+"/>
+
+    <TextView
+        android:id="@+id/textViewChooseDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxSugar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Выбирите вид напитка"
+        android:layout_margin="8dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinnerTea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/options_of_tea"
+        app:layout_constraintTop_toBottomOf="@id/textViewChooseDrink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="visible"
+        android:layout_margin="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCoffe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/options_of_coffe"
+        app:layout_constraintTop_toBottomOf="@id/textViewChooseDrink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        android:layout_margin="8dp"/>
+
+    <ImageView
+        android:id="@+id/buttonSendOrder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Кнопка отправить заказ"
+        android:src="@drawable/button"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCoffe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="8dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

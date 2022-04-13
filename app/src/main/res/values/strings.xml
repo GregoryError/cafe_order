@@ -6,4 +6,16 @@
     <string name="hint_password">Введите пароль:</string>
     <string name="button_create_order">Создать заказ</string>
     <string name="button_text">Сделать заказ</string>
+    <string name="toast_msg">Необходимо ввести данные</string>
+    <string-array name="options_of_coffe">
+        <item>Американо</item>
+        <item>Эспрессо</item>
+        <item>Латте</item>
+    </string-array>
+
+    <string-array name="options_of_tea">
+        <item>Черный</item>
+        <item>Зеленый</item>
+        <item>Красный</item>
+    </string-array>
 </resources>
