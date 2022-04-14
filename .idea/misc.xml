@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Gregory/AndroidStudioProjects/CafeOrder/app/src/main/res/layout/activity_create_order.xml" value="0.2674772036474164" />
+        <entry key="..\:/Users/Gregory/AndroidStudioProjects/CafeOrder/app/src/main/res/layout/activity_create_order.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/Gregory/AndroidStudioProjects/CafeOrder/app/src/main/res/layout/activity_login.xml" value="0.2674772036474164" />
         <entry key="..\:/Users/Gregory/AndroidStudioProjects/CafeOrder/app/src/main/res/layout/activity_main.xml" value="0.2674772036474164" />
+        <entry key="..\:/Users/Gregory/AndroidStudioProjects/CafeOrder/app/src/main/res/layout/activity_order_detail.xml" value="0.2613981762917933" />
       </map>
     </option>
   </component>
